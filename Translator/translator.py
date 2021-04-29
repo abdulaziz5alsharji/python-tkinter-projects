@@ -18,7 +18,7 @@ class Translate:
         self.root.geometry("530x330")
         self.root.title("Languages Translator")
         self.root.resizable(0,0)
-        self.root.iconbitmap(r"C:\Users\Dell\Desktop\icon\translator.ico")
+        self.root.iconbitmap(r"translator.ico")
 
         # Combo Values
         self.languages=[
@@ -133,7 +133,7 @@ class Translate:
         # Vars
         self.lang_var=StringVar()
         # Image Label
-        self.image=ImageTk.PhotoImage(Image.open(r"C:\Users\Dell\Desktop\gui_image\translator.png"))
+        self.image=ImageTk.PhotoImage(Image.open(r"translator.png"))
         self.label_image=Label(self.root,image=self.image)
         self.label_image.place(x=230,y=3)
 
