@@ -21,7 +21,7 @@ class CurrencyConverter:
         self.root.geometry("600x270")
         self.root.title("Currency Converter")
         self.root.resizable(0,0)
-        self.root.iconbitmap(r"C:\Users\Dell\Desktop\icon\currency-converter-icon.ico")
+        self.root.iconbitmap(r"currency-converter-icon.ico")
 
         # VARS
         self.amount_var=IntVar()
@@ -138,7 +138,7 @@ class CurrencyConverter:
         ]
 
         # Image Label
-        self.open_image=Image.open(r"C:\Users\Dell\Desktop\image_tk\currency.png")
+        self.open_image=Image.open(r"currency.png")
         self.zoom = 0.5
         self.pixels_x, self.pixels_y = tuple([int(self.zoom * x) for x in self.open_image.size])
         self.image=ImageTk.PhotoImage(self.open_image.resize((self.pixels_x, self.pixels_y)))
